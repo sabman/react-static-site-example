@@ -12,10 +12,13 @@ module.exports = {
     filename: 'bundle.js',
     libraryTarget: 'umd'
   },
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },  
   module: {
     loaders: [
       {
-        test: /\.(js|jsx)/,
+        test: /\.jsx?$/,
         loader: 'babel',
         include: __dirname + '/src'
       },

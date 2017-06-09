@@ -14,7 +14,7 @@ export default class Template extends React.Component {
           <link rel="icon" href="/favicon.ico"/>
         </head>
         <body>
-          <div id='outlet' className="container">
+          <div id='outlet'>
             {this.props.children}
           </div>
           <script src="/bundle.js"></script>
