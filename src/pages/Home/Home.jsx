@@ -24,9 +24,8 @@ import logoImg from '../../assets/images/logo.png';
 import backgroundImage from '../../assets/images/hero-bg-01.jpg';
 
 import screenShotLeakageTrends from '../../assets/images/screenshots/app-leakage.png';
-// import screenShot from '../../assets/images/screenshots/app-map@2x.png';
-// import screenShot from '../../assets/images/screenshots/app@2x.png';
-// import screenShot from '../../assets/images/screenshots/dashboard@2x.png';
+import screenShotLocationAnalysis from '../../assets/images/screenshots/app-map@2x.png';
+import screenShotIndustryTrends from '../../assets/images/screenshots/app@2x.png';
 import screenShotLaptop from '../../assets/images/screenshots/laptop.png';
 
 import React from "react";
@@ -235,7 +234,7 @@ const CurrentHero = () => {
 
         <div className="row">
           <div className="col">
-            <img src="img/screenshots/laptop.png" className="img-fluid" alt="Responsive image"/>
+            <img src={screenShotLaptop} className="img-fluid" alt="Responsive image"/>
           </div>
         </div>
         
@@ -325,7 +324,7 @@ export default (props) => {
         <Section className="gray" id={'industry-trends'}>
           <div className="row">
             <div className="col-8"> 
-              <img src="img/screenshots/app@2x.png" className="img-fluid" alt="Responsive image"/>
+              <img src={screenShotIndustryTrends} className="img-fluid" alt="Responsive image"/>
             </div>
             <div className="col-4"> 
               <FeatureIndustryTrends/>
@@ -343,7 +342,7 @@ export default (props) => {
           </div>
           <div className="row">
             <div className="col"> 
-              <img src="img/screenshots/app@2x.png" className="img-fluid" alt="Responsive image"/>
+              <img src={screenShotIndustryTrends} className="img-fluid" alt="Responsive image"/>
             </div>
           </div>          
         </Section>
@@ -357,7 +356,7 @@ export default (props) => {
             </div>
 
             <div className="col-8"> 
-              <img src="img/screenshots/app-map@2x.png" className="img-fluid" alt="Responsive image"/>
+              <img src={screenShotLocationAnalysis} className="img-fluid" alt="Responsive image"/>
             </div>          
           </div>
         </Section>
@@ -373,7 +372,7 @@ export default (props) => {
 
           <div className="row">
             <div className="col"> 
-              <img className="img-thumbnail" src="img/screenshots/app-map@2x.png" className="img-fluid" alt="Responsive image"/>
+              <img className="img-thumbnail" src={screenShotLocationAnalysis} className="img-fluid" alt="Responsive image"/>
             </div>          
           </div>
         </Section>
