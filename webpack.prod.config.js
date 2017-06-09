@@ -15,7 +15,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.js/,
+        test: /\.(js|jsx)/,
         loader: 'babel',
         include: __dirname + '/src'
       },
@@ -25,6 +25,13 @@ module.exports = {
           'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss'
         ),
         include: __dirname + '/src'
+      },
+      {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract(
+            'style-loader', // backup loader when not building .css file
+            'css-loader!sass-loader' // loaders to preprocess CSS
+        )
       },
       {
         test: /\.(jpg|png)/,

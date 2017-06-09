@@ -18,6 +18,13 @@ module.exports = {
         include: __dirname + '/src',
       },
       {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract(
+            'style-loader', // backup loader when not building .css file
+            'css-loader!sass-loader' // loaders to preprocess CSS
+        )
+      },
+      {
         test: /\.css/,
         loader: ExtractTextPlugin.extract(
           'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss'
